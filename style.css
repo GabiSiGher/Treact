@@ -142,13 +142,19 @@ h1 {
     border-radius: 1000px;
     background-color: #FFFFFF;
     padding: 20px 192px 20px 32px;
-    border: 2px solid rgb(229,231,235)
-
+    border: 2px solid rgb(229,231,235);
+    width: 100%;
 }
 
 .header__email {
     position: relative;
     display: inline-block;
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header__email--btn {
@@ -284,6 +290,10 @@ FEATURES
 
 }
 
+.quality__img img {
+    width: 100%;
+}
+
 .quality__tag {
     font-size: 16px;
     letter-spacing: 1.6px;
@@ -349,6 +359,10 @@ Steps*/
     width: 50%;
 }
 
+.steps__img img {
+    width: 100%;
+}
+
 .steps {
     width: 50%;
 }
@@ -363,7 +377,14 @@ Steps*/
     color: #cbd5e0;
     font-size: 36px;
     font-weight: 600;
-    list-style: 1;
+    line-height: 1;
+}
+
+.step__description {
+    flex-direction: column;
+    display: flex;
+    margin-left: 24px;
+    max-width: 320px;
 }
 
 .step__title {
