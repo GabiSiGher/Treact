@@ -425,6 +425,7 @@ Steps*/
     width: 50%;
     display: flex;
     align-items: center;
+    padding-right: 18px;
 }
 
 .steps__img img {
@@ -433,6 +434,7 @@ Steps*/
 
 .steps__section {
     width: 50%;
+    padding-left: 18px;
 }
 
 .step {
@@ -882,7 +884,6 @@ TESTIMONIALS
 }
 
  .start__buttons {
-    width: 50%;
     padding-top: 12px;
 }
 
@@ -1149,11 +1150,33 @@ footer {
 
     .start__buttons {
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
+    
     }
 }
 
 @media (max-width: 768px) {
+
+        .header__email {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .header__email--btn {
+        position: static;
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
 
 .service {
     width: 100%;
@@ -1210,6 +1233,7 @@ text-align: center;
     .value__title {
         justify-content: center;
     }
+
 .values__container {
     padding: 0;
     margin-bottom: 100px;
@@ -1227,6 +1251,24 @@ text-align: center;
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+.start__buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;}
+
+
+         .start__btn {
+        margin-right: 0px;
+         }
+
+
+             .contact__btn {
+        margin-left: 0px;
+        margin-top: 12px;
+    }
 }
 
 .footer__columns {
@@ -1249,6 +1291,7 @@ text-align: center;
 .footer__copyright {
     margin-bottom: 16px;
 }
+
 
 
 }
